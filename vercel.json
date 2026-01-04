@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "name": "portfolio",
-  "builds": [
-    {
-      "src": "index5.html",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
+    {
+      "src": "/Chaitanya_Khairnar.pdf",
+      "dest": "/Chaitanya_Khairnar.pdf"
+    },
     {
       "src": "/(.*)",
       "dest": "/index5.html"
