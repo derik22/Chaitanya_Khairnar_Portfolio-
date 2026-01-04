@@ -6,10 +6,7 @@
 <title>Chaitanya Khairnar | Data Scientist</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
-:root {
-  --primary: #00e5ff;
-  --text: #e5e7eb;
-}
+:root { --primary: #00e5ff; --text: #e5e7eb; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -23,23 +20,23 @@ body {
   overflow-x: hidden;
 }
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
+  content:"";
+  position:fixed;
+  inset:0;
   background-image:
     linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  z-index: -1;
-  animation: gridMove 25s linear infinite;
+  background-size:60px 60px;
+  z-index:-1;
+  animation:gridMove 25s linear infinite;
 }
-@keyframes gridMove { from {transform:translateY(0);} to {transform:translateY(60px);} }
+@keyframes gridMove { from{transform:translateY(0);} to{transform:translateY(60px);} }
 
 /* NAVBAR */
 nav { position: fixed; top:0; width:100%; padding:18px 10%; display:flex; justify-content:space-between; align-items:center; z-index:1000; }
 nav.scrolled { background:#000; box-shadow:0 0 20px rgba(0,229,255,.4); }
 nav h1 { color: var(--primary); }
-nav ul { display: flex; gap: 25px; }
+nav ul { display:flex; gap:25px; }
 nav ul a { color:#cbd5f5; text-decoration:none; }
 nav ul a:hover { color: var(--primary); }
 
@@ -58,10 +55,10 @@ section { padding:80px 10%; }
 .title::after { content:""; display:block; width:80px; height:3px; background: var(--primary); margin:12px auto 0; }
 
 /* SKILLS */
-.skills { display: flex; gap:20px; overflow-x:auto; padding:10px 0; }
+.skills { display:flex; gap:20px; overflow-x:auto; padding:10px 0; }
 .skill { text-align:center; min-width:140px; padding:25px; border-radius:16px; border:1px solid var(--primary); }
 .skill i { font-size:36px; color: var(--primary); margin-bottom:10px; }
-.skill:hover { transform: translateY(-8px); box-shadow:0 0 30px var(--primary); }
+.skill:hover { transform:translateY(-8px); box-shadow:0 0 30px var(--primary); }
 
 /* PROJECTS */
 .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; }
@@ -100,7 +97,7 @@ footer { text-align:center; padding:20px; color:#94a3b8; }
     <p>Aspiring Data Scientist with hands-on experience in machine learning, data analysis, and real-world ML projects.</p>
     <div class="btns">
       <a href="#projects"><i class="fa-solid fa-eye"></i>View Projects</a>
-      <a href="Chaitanya_Khairnar.pdf"><i class="fa-solid fa-file-pdf"></i>Download CV</a>
+      <a href="Chaitanya_khairnar.pdf"><i class="fa-solid fa-file-pdf"></i>Download CV</a>
     </div>
   </div>
 </header>
@@ -173,6 +170,7 @@ footer { text-align:center; padding:20px; color:#94a3b8; }
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khairnarchaitanya93@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
   <a href="https://github.com/Chaitanya699" target="_blank"><i class="fa-brands fa-github"></i></a>
   <a href="https://www.linkedin.com/in/chaitanya-khairnar-6aa6ab217/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://chaitanya-khairnar-portfolio.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i>Portfolio</a>
 </section>
 
 <footer>© 2026 Chaitanya Khairnar | Data Scientist</footer>
