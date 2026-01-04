@@ -10,14 +10,8 @@
   --primary: #00e5ff;
   --text: #e5e7eb;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
   font-family: "Segoe UI", sans-serif;
   color: var(--text);
@@ -39,179 +33,53 @@ body::before {
   z-index: -1;
   animation: gridMove 25s linear infinite;
 }
-@keyframes gridMove {
-  from { transform: translateY(0); }
-  to { transform: translateY(60px); }
-}
+@keyframes gridMove { from {transform:translateY(0);} to {transform:translateY(60px);} }
 
 /* NAVBAR */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 18px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-nav.scrolled {
-  background: #000;
-  box-shadow: 0 0 20px rgba(0,229,255,.4);
-}
-nav h1 {
-  color: var(--primary);
-}
-nav ul {
-  display: flex;
-  gap: 25px;
-}
-nav ul a {
-  color: #cbd5f5;
-  text-decoration: none;
-}
-nav ul a:hover {
-  color: var(--primary);
-}
+nav { position: fixed; top:0; width:100%; padding:18px 10%; display:flex; justify-content:space-between; align-items:center; z-index:1000; }
+nav.scrolled { background:#000; box-shadow:0 0 20px rgba(0,229,255,.4); }
+nav h1 { color: var(--primary); }
+nav ul { display: flex; gap: 25px; }
+nav ul a { color:#cbd5f5; text-decoration:none; }
+nav ul a:hover { color: var(--primary); }
 
 /* HERO */
-header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.hero h2 {
-  font-size: 44px;
-  color: var(--primary);
-}
-.hero h3 {
-  margin: 10px 0;
-  font-size: 22px;
-}
-.hero p {
-  max-width: 650px;
-  margin: 15px auto 30px;
-  color: #cbd5f5;
-}
-.hero .btns a {
-  padding: 12px 26px;
-  margin: 0 8px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  transition: .3s;
-}
-.hero .btns a:hover {
-  background: var(--primary);
-  color: #000;
-  box-shadow: 0 0 25px var(--primary);
-}
+header { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; }
+.hero h2 { font-size:44px; color: var(--primary); }
+.hero h3 { margin:10px 0; font-size:22px; }
+.hero p { max-width:650px; margin:15px auto 30px; color:#cbd5f5; }
+.hero .btns { display:flex; justify-content:center; gap:15px; }
+.hero .btns a { display:flex; align-items:center; gap:8px; padding:12px 22px; border-radius:30px; text-decoration:none; font-weight:600; border:2px solid var(--primary); color:var(--primary); transition:.3s; }
+.hero .btns a:hover { background: var(--primary); color:#000; box-shadow:0 0 25px var(--primary); }
 
 /* SECTION */
-section {
-  padding: 80px 10%;
-}
-.title {
-  font-size: 28px;
-  margin-bottom: 35px;
-  color: var(--primary);
-  text-align: center;
-}
-.title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: var(--primary);
-  margin: 12px auto 0;
-}
+section { padding:80px 10%; }
+.title { font-size:28px; margin-bottom:35px; color: var(--primary); text-align:center; }
+.title::after { content:""; display:block; width:80px; height:3px; background: var(--primary); margin:12px auto 0; }
 
 /* SKILLS */
-.skills {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 10px 0;
-}
-.skill {
-  text-align: center;
-  min-width: 140px;
-  padding: 25px;
-  border-radius: 16px;
-  border: 1px solid var(--primary);
-}
-.skill i {
-  font-size: 36px;
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-.skill:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 30px var(--primary);
-}
+.skills { display: flex; gap:20px; overflow-x:auto; padding:10px 0; }
+.skill { text-align:center; min-width:140px; padding:25px; border-radius:16px; border:1px solid var(--primary); }
+.skill i { font-size:36px; color: var(--primary); margin-bottom:10px; }
+.skill:hover { transform: translateY(-8px); box-shadow:0 0 30px var(--primary); }
 
 /* PROJECTS */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  gap: 25px;
-}
-.project {
-  padding: 25px;
-  border-radius: 18px;
-  border: 1px solid var(--primary);
-}
-.project h3 {
-  color: var(--primary);
-}
-.project p {
-  margin: 10px 0;
-  color: #cbd5f5;
-}
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-}
-.project a:hover {
-  text-shadow: 0 0 10px var(--primary);
-}
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 35px var(--primary);
-}
+.projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; }
+.project { padding:25px; border-radius:18px; border:1px solid var(--primary); }
+.project h3 { color: var(--primary); }
+.project p { margin:10px 0; color:#cbd5f5; }
+.project a { display:inline-block; margin-top:10px; color: var(--primary); text-decoration:none; font-weight:600; }
+.project a:hover { text-shadow:0 0 10px var(--primary); }
+.project:hover { transform:translateY(-10px); box-shadow:0 0 35px var(--primary); }
 
 /* CONTACT */
-.contact {
-  text-align: center;
-}
-.contact a {
-  color: var(--primary);
-  margin: 0 12px;
-  font-size: 24px;
-}
+.contact { text-align:center; }
+.contact a { color: var(--primary); margin:0 12px; font-size:24px; }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #94a3b8;
-}
+footer { text-align:center; padding:20px; color:#94a3b8; }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: .8s;
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal { opacity:0; transform:translateY(40px); transition:.8s; }
+.reveal.active { opacity:1; transform:translateY(0); }
 </style>
 </head>
 <body>
@@ -231,8 +99,8 @@ footer {
     <h3 id="typing"></h3>
     <p>Aspiring Data Scientist with hands-on experience in machine learning, data analysis, and real-world ML projects.</p>
     <div class="btns">
-      <a href="#projects">View Projects</a>
-      <a href="Chaitanya_Khairnar.pdf" target="_blank">Download CV</a>
+      <a href="#projects"><i class="fa-solid fa-eye"></i>View Projects</a>
+      <a href="Chaitanya_Khairnar.pdf"><i class="fa-solid fa-file-pdf"></i>Download CV</a>
     </div>
   </div>
 </header>
