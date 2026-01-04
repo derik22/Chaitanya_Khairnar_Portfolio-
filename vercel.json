@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/Chaitanya_Khairnar.pdf",
-      "dest": "/Chaitanya_Khairnar.pdf"
+      "src": "/Chaitanya_khairnar.pdf",
+      "dest": "/Chaitanya_khairnar.pdf"
     },
     {
       "src": "/(.*)",
@@ -11,3 +11,4 @@
     }
   ]
 }
+
